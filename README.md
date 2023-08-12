@@ -1,16 +1,21 @@
 # flutter_independent_gradle_poc
 
-A new Flutter project.
+Proof of concept of using Gradle as a task runner for the whole Flutter app –
+not just for Android subproject of it.
 
-## Getting Started
+### Benefits of using Gradle as a task runner
 
-This project is a starting point for a Flutter application.
+- Mature, very powerful build automation tool
+  - Miles ahead of Melos, let alone `make`
+  - Ecosystem of plugins, so it'll be easier to share common tasks
+- Truly cross-platform
+- Tasks are written in Kotlin, arguably one of the more pleasant and productive
+  programming languages
+- JVM based, so we've got access to its ecosystem
 
-A few resources to get you started if this is your first Flutter project:
+### Dangers
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- The Flutter tool has quite strong assumptions about Gradle project structure
+  and some hacking and workaround are required to make it work.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Nobody does this, zero support
