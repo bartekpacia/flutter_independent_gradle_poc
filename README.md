@@ -3,6 +3,8 @@
 Proof of concept of using Gradle as a task runner for the whole Flutter app –
 not just for Android subproject of it.
 
+See PR #1 for a full-diff of changes required to make it work.
+
 ### Benefits of using Gradle as a task runner
 
 - Mature, very powerful build automation tool
